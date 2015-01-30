@@ -18,6 +18,10 @@
 		22B3703519F80E7C0027AD63 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B3703319F80E7C0027AD63 /* MainViewController.xib */; };
 		8B3223AA1A7B29B5005E2466 /* NodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3223A81A7B29B5005E2466 /* NodeCell.m */; };
 		8B3223AB1A7B29B5005E2466 /* NodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3223A91A7B29B5005E2466 /* NodeCell.xib */; };
+		8B3223AF1A7B34E9005E2466 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3223AD1A7B34E9005E2466 /* SettingsViewController.m */; };
+		8B3223B01A7B34E9005E2466 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3223AE1A7B34E9005E2466 /* SettingsViewController.xib */; };
+		8B3223B41A7B36C3005E2466 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3223B21A7B36C3005E2466 /* SettingCell.m */; };
+		8B3223B51A7B36C3005E2466 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3223B31A7B36C3005E2466 /* SettingCell.xib */; };
 		D527A1FE13995D5928AD8275 /* FBNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D527AF4E62AD49D6E9DA9EF4 /* FBNode.m */; };
 		F9A9F2A4D30927CDD0ED427C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4F8D0B10B8E00B2974E975 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -53,6 +57,12 @@
 		8B3223A71A7B29B5005E2466 /* NodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeCell.h; sourceTree = "<group>"; };
 		8B3223A81A7B29B5005E2466 /* NodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeCell.m; sourceTree = "<group>"; };
 		8B3223A91A7B29B5005E2466 /* NodeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NodeCell.xib; sourceTree = "<group>"; };
+		8B3223AC1A7B34E9005E2466 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		8B3223AD1A7B34E9005E2466 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		8B3223AE1A7B34E9005E2466 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		8B3223B11A7B36C3005E2466 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		8B3223B21A7B36C3005E2466 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		8B3223B31A7B36C3005E2466 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		B37197265A46D9EE89E4ADB6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C82D1B49D3EF3D905BBBA67C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D527AF4E62AD49D6E9DA9EF4 /* FBNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNode.m; sourceTree = "<group>"; };
@@ -165,6 +175,9 @@
 				22B3703119F80E7C0027AD63 /* MainViewController.h */,
 				22B3703219F80E7C0027AD63 /* MainViewController.m */,
 				22B3703319F80E7C0027AD63 /* MainViewController.xib */,
+				8B3223AC1A7B34E9005E2466 /* SettingsViewController.h */,
+				8B3223AD1A7B34E9005E2466 /* SettingsViewController.m */,
+				8B3223AE1A7B34E9005E2466 /* SettingsViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -175,6 +188,9 @@
 				8B3223A71A7B29B5005E2466 /* NodeCell.h */,
 				8B3223A81A7B29B5005E2466 /* NodeCell.m */,
 				8B3223A91A7B29B5005E2466 /* NodeCell.xib */,
+				8B3223B11A7B36C3005E2466 /* SettingCell.h */,
+				8B3223B21A7B36C3005E2466 /* SettingCell.m */,
+				8B3223B31A7B36C3005E2466 /* SettingCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B3701A19F808C80027AD63 /* LaunchScreen.xib in Resources */,
+				8B3223B01A7B34E9005E2466 /* SettingsViewController.xib in Resources */,
+				8B3223B51A7B36C3005E2466 /* SettingCell.xib in Resources */,
 				8B3223AB1A7B29B5005E2466 /* NodeCell.xib in Resources */,
 				22B3703019F80B4C0027AD63 /* LoginViewController.xib in Resources */,
 				22B3701719F808C80027AD63 /* Images.xcassets in Resources */,
@@ -331,6 +349,8 @@
 				22B3700C19F808C80027AD63 /* main.m in Sources */,
 				22B3703419F80E7C0027AD63 /* MainViewController.m in Sources */,
 				D527A1FE13995D5928AD8275 /* FBNode.m in Sources */,
+				8B3223B41A7B36C3005E2466 /* SettingCell.m in Sources */,
+				8B3223AF1A7B34E9005E2466 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "FBNode.h"
 #import "NodeCell.h"
+#import "SettingsViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -17,6 +18,7 @@
 @property(weak, nonatomic) IBOutlet UITableView *tableView;
 
 - (void)reload;
+- (void)onSettingsButton;
 
 @end
 
@@ -38,7 +40,10 @@
 
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    //self.tableView.rowHeight =
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStylePlain target:self action:@selector(onSettingsButton)];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -58,6 +63,12 @@
 }
 
 #pragma mark - Private methods
+
+- (void)onSettingsButton {
+    SettingsViewController *vc = [[SettingsViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nvc animated:YES completion:nil];
+}
 
 - (void)reload {
     [FBRequestConnection startWithGraphPath:@"/me/home"
