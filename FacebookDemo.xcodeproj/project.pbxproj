@@ -16,6 +16,9 @@
 		22B3703019F80B4C0027AD63 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B3702F19F80B4C0027AD63 /* LoginViewController.xib */; };
 		22B3703419F80E7C0027AD63 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3703219F80E7C0027AD63 /* MainViewController.m */; };
 		22B3703519F80E7C0027AD63 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B3703319F80E7C0027AD63 /* MainViewController.xib */; };
+		8B3223AA1A7B29B5005E2466 /* NodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3223A81A7B29B5005E2466 /* NodeCell.m */; };
+		8B3223AB1A7B29B5005E2466 /* NodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3223A91A7B29B5005E2466 /* NodeCell.xib */; };
+		D527A1FE13995D5928AD8275 /* FBNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D527AF4E62AD49D6E9DA9EF4 /* FBNode.m */; };
 		F9A9F2A4D30927CDD0ED427C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4F8D0B10B8E00B2974E975 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,8 +50,13 @@
 		22B3703119F80E7C0027AD63 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		22B3703219F80E7C0027AD63 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		22B3703319F80E7C0027AD63 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		8B3223A71A7B29B5005E2466 /* NodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeCell.h; sourceTree = "<group>"; };
+		8B3223A81A7B29B5005E2466 /* NodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeCell.m; sourceTree = "<group>"; };
+		8B3223A91A7B29B5005E2466 /* NodeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NodeCell.xib; sourceTree = "<group>"; };
 		B37197265A46D9EE89E4ADB6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C82D1B49D3EF3D905BBBA67C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D527AF4E62AD49D6E9DA9EF4 /* FBNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNode.m; sourceTree = "<group>"; };
+		D527AF88CD1720FB952AFFA6 /* FBNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBNode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,8 @@
 				22B3701619F808C80027AD63 /* Images.xcassets */,
 				22B3701819F808C80027AD63 /* LaunchScreen.xib */,
 				22B3700919F808C80027AD63 /* Supporting Files */,
+				D527A30A4A264142B53002B3 /* Views */,
+				D527A9D5FEE18912319E4FBB /* Models */,
 			);
 			path = FacebookDemo;
 			sourceTree = "<group>";
@@ -157,6 +167,25 @@
 				22B3703319F80E7C0027AD63 /* MainViewController.xib */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D527A30A4A264142B53002B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B3223A71A7B29B5005E2466 /* NodeCell.h */,
+				8B3223A81A7B29B5005E2466 /* NodeCell.m */,
+				8B3223A91A7B29B5005E2466 /* NodeCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D527A9D5FEE18912319E4FBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D527AF4E62AD49D6E9DA9EF4 /* FBNode.m */,
+				D527AF88CD1720FB952AFFA6 /* FBNode.h */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B3701A19F808C80027AD63 /* LaunchScreen.xib in Resources */,
+				8B3223AB1A7B29B5005E2466 /* NodeCell.xib in Resources */,
 				22B3703019F80B4C0027AD63 /* LoginViewController.xib in Resources */,
 				22B3701719F808C80027AD63 /* Images.xcassets in Resources */,
 				22B3703519F80E7C0027AD63 /* MainViewController.xib in Resources */,
@@ -296,9 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B3701219F808C80027AD63 /* LoginViewController.m in Sources */,
+				8B3223AA1A7B29B5005E2466 /* NodeCell.m in Sources */,
 				22B3700F19F808C80027AD63 /* AppDelegate.m in Sources */,
 				22B3700C19F808C80027AD63 /* main.m in Sources */,
 				22B3703419F80E7C0027AD63 /* MainViewController.m in Sources */,
+				D527A1FE13995D5928AD8275 /* FBNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
